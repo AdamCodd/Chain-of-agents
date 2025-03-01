@@ -2,7 +2,7 @@
 An experimental implementation of Google's "[Chain of Agents: Large Language Models Collaborating on Long-Context Tasks](https://research.google/blog/chain-of-agents-large-language-models-collaborating-on-long-context-tasks/)" paper. It's far from production-ready, but I get very good results with it even with relatively weak models. The main use case would be very large documents (100-200K tokens) where the user query needs multi-hop reasoning so a basic RAG would fall short there.
 
 ## Key Enhancements from Original Paper
-- **Enhanced prompt engineering**: Implemented sophisticated prompting strategies for both worker and manager agents, optimized for small model limitations (8B/3B) and capabilities.
+- **Enhanced prompt engineering**: Implements sophisticated prompting strategies for both worker and manager agents, optimized for small model limitations (8B/3B) and capabilities.
 - **Dynamic Context-Aware Chunking**: Incorporates TF-IDF analysis and cosine similarity metrics; prioritizes contextually relevant document segments; adaptive document splitting algorithms.
 - **Entropy-Based Prioritization**: Use Shannon entropy calculations for content diversity assessment; intelligent document subdivision decisions
 - **Hierarchical Processing Structure**: Implements a depth-limited binary tree architecture; systematic processing of complex content.
