@@ -1,5 +1,5 @@
 # Chain-of-agents
-An experimental implementation of Google's "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks" paper. It's far from production-ready, but I get very good results with it. The main use case would be very large documents (100-200K tokens) where the user query needs multi-hop reasoning so a basic RAG would fall short there.
+An experimental implementation of Google's "Chain of Agents: Large Language Models Collaborating on Long-Context Tasks" paper. It's far from production-ready, but I get very good results with it even with relatively weak models. The main use case would be very large documents (100-200K tokens) where the user query needs multi-hop reasoning so a basic RAG would fall short there.
 
 ## Key Enhancements from Original Paper
 - **Enhanced prompt engineering**: Implemented sophisticated prompting strategies for both worker and manager agents, optimized for small model limitations (8B/3B) and capabilities.
